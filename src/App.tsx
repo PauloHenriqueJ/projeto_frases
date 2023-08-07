@@ -45,7 +45,7 @@ frases:[
   'Três ingredientes são fundamentais: fé, esperança e amor! Deus cuida do resto. Boa noite!',
   'Acalme esse coração e confie mais no lindo caminho que a vida preparou para você. Boa noite!',
   'Boa noite! Que os sonhos te abracem e que acorde cheio de energia para um novo dia.',
-  'Olhe para a lua e sinta todas as energias positivas que ela está te enviando. Boa noite!,'
+  'Olhe para a lua e sinta todas as energias positivas que ela está te enviando. Boa noite!',
 
 
 
@@ -58,7 +58,7 @@ function handleSwitchCategory (index:number){
 }
 
 function gerarFrase(){
- let numeroAleatorio = Math.floor(Math.random() * allFrases[categoriaSelecionada].frases.length)
+ const numeroAleatorio = Math.floor(Math.random() * allFrases[categoriaSelecionada].frases.length)
  setTextoFrase(`"${allFrases[categoriaSelecionada].frases[numeroAleatorio]}"`)
 }
  
